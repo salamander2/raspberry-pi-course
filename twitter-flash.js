@@ -19,7 +19,8 @@ var stream = T.stream('statuses/filter', {
   track: [
   '#raspberrypi',
   '@raspberry_pi',
-  '#nodejs'
+  '#ldnont',
+  '#toronto'
   ],
   language: 'en'
 });
