@@ -9,5 +9,5 @@ My first raspberry pi course for UnLondon
 
 **Image**
 
-![image of the board](https://raw.githubusercontent.com/james2doyle/raspberry-pi-course/master/image.jpg)
+![image of the board](https://raw.githubusercontent.com/james2doyle/raspberry-pi-course/master/board.jpg)
 
