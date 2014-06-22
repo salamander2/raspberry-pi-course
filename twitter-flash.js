@@ -33,12 +33,13 @@ var gpioPin = 16;
 gpio.open(gpioPin, "output", function(err){
   // if there was an error let us know
   if (err) {
-    throw err;
     // turn the pin off and close it, just in case
     gpio.write(gpioPin, 0, function(){
       gpio.close(gpioPin);
       process.exit(0);
     });
+    // throw the error
+    throw err;
   }
 });
 // what happens when the tweet event is fired
@@ -72,12 +73,12 @@ stream.on('connected', function (response) {
   console.log('Stream connected!');
 });
 
-// start a 10 second timer for this little app
+// start a 20 second timer for this little app
 setTimeout(function() {
   gpio.write(gpioPin, 0, function(){
     gpio.close(gpioPin);
-    console.log('10 Seconds is up!');
+    console.log('20 Seconds is up!');
     // close this program
     process.exit(0);
   });
-}, 10000);
+}, 20000);
