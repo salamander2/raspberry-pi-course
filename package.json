@@ -5,7 +5,10 @@
   "repository": {
     "url": ""
   },
-  "dependencies": {},
+  "dependencies": {
+    "twit": "~1.1.15",
+    "native-promise-only": "~0.7.0"
+    },
   "devDependencies": {
     "pi-gpio": "0.0.5"
   },
