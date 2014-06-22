@@ -26,19 +26,44 @@ var stream = T.stream('statuses/filter', {
 
 // this is the pin we are going to use to toggle
 var gpioPin = 16;
-// the starting state of the light
-var on = 1;
+// open the pin we are going to use
+gpio.open(gpioPin, "output", function(err){
+  // if there was an error let us know
+  if (err) {
+    throw err;
+    // turn the pin off and close it, just in case
+    gpio.write(gpioPin, 0, function(){
+      gpio.close(gpioPin);
+      process.exit(0);
+    });
+  }
+});
 // what happens when the tweet event is fired
 emitter.on('tweet', function() {
   gpio.open(gpioPin, "output", function(err){
-    // toggle the pin
-    gpio.write(gpioPin, on, function(){
-      on = (on + 1) % 2;
+    // turn on the pin
+    gpio.write(gpioPin, 1, function(){
+      // start a timer that lasts 40 milliseconds
+      setTimeout(function(){
+        // turn the pin off
+        gpio.write(gpioPin, 0);
+      }, 40);
     });
   });
 });
 
 stream.on('tweet', function (tweet) {
+  // put the tweet in the console
   console.log("> %s \r", tweet.text);
+  // let the program know a tweet happened
   emitter.emit('tweet');
 });
+
+// start a 10 second timer for this little app
+setTimeout(function() {
+  gpio.write(gpioPin, 0, function(){
+    gpio.close(gpioPin);
+    // close this program
+    process.exit(0);
+  });
+}, 10000);
