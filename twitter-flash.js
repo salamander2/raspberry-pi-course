@@ -4,6 +4,8 @@ var config = require('./config');
 var gpio = require('pi-gpio');
 var Promise = require("native-promise-only");
 var Twit = require('twit');
+var Emitter = require('events').EventEmitter;
+var emitter = new Emitter();
 // stat the twit stuff
 var T = new Twit({
   consumer_key: config.consumer_key,
