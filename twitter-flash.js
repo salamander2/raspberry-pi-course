@@ -30,9 +30,11 @@ var gpioPin = 16;
 var on = 1;
 // what happens when the tweet event is fired
 emitter.on('tweet', function() {
-  // toggle the pin
-  gpio.write(gpioPin, on, function(){
-    on = (on + 1) % 2;
+  gpio.open(gpioPin, "output", function(err){
+    // toggle the pin
+    gpio.write(gpioPin, on, function(){
+      on = (on + 1) % 2;
+    });
   });
 });
 
