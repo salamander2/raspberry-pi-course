@@ -5,9 +5,10 @@ gpio.open(16, "output", function(err) {
     gpio.close(16);
   });
   setTimeout(function(){
-    gpio.write(16, 0, function(){
-      gpio.close(16);
-      process.exit(0);
+    gpio.open(16, "output", function(err) {
+      gpio.write(16, 0, function() {
+        gpio.close(16);
+      });
     });
   }, 1000);
 });
