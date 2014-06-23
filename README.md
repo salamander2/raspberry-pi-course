@@ -79,8 +79,8 @@ iface wlan0 inet dhcp
 * Connect J-3 to the bottom of the first `-`(minus) row
 * Connect J-6 to I-16 with the 180Ω resistor
 * Connect J-8 to H-17 with the 180Ω resistor
-* Connect the Blue diode's long wire to J-17 and the short wire to the bottom of the adjacent minus row
-* Connect the Red diode's long wire to J-16 and the short wire to the bottom of the adjacent minus row
+* Connect the Blue diode's **long wire** to J-17 and the **short wire** to the bottom of the adjacent minus row
+* Connect the Red diode's **long wire** to J-16 and the **short wire** to the bottom of the adjacent minus row
 
 ![closeup image of the board](https://raw.githubusercontent.com/james2doyle/raspberry-pi-course/master/board2.jpg)
 ![closeup image of the board](https://raw.githubusercontent.com/james2doyle/raspberry-pi-course/master/board3.jpg)
