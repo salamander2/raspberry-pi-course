@@ -92,3 +92,22 @@ iface wlan0 inet dhcp
 * install the dependencies with `npm install`
 * run the first program with `node test.js`
 
+#### Setting up config.json
+
+The Twitter application will not run without a `config.json` file that contains your application codes.
+
+* Create a new application on the [twitter developer site](https://apps.twitter.com/app/new)
+* Once create, go to the API Keys page, and click "Create my access token"
+* Create a new file in our project folder with `nano config.json`
+* Paste in the following code replacing the values with your tokens and secrets:
+
+```json
+{
+  "consumer_key": "API Key",
+  "consumer_secret": "API Secret",
+  "access_token": "Your Access Token",
+  "access_token_secret": "Your Access Secret"
+}
+```
+
+You can now run the twitter app with `node twitter-flash.js`
