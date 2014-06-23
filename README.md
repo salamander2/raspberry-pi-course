@@ -1,7 +1,7 @@
 raspberry-pi-course
 ===================
 
-My first raspberry pi course for UnLondon
+My first raspberry pi course for UnLondon. See the course breakdown [here](http://www.unlondon.ca/workshops/introduction-to-raspberry-pi)
 
 **looping gif**
 
@@ -47,7 +47,7 @@ iface wlan0 inet dhcp
 
 #### Update
 
-* you can update the repositries with `sudo apt-get update`, accept with `y`
+* you can update the repositories with `sudo apt-get update`, accept with `y`
 * Upgrade the pi with `sudo apt-get upgrade`, accept with `y`
 
 #### Installing the required tools
@@ -82,8 +82,8 @@ iface wlan0 inet dhcp
 * Connect the Blue diode's long wire to J-17 and the short wire to the bottom of the adjacent minus row
 * Connect the Red diode's long wire to J-16 and the short wire to the bottom of the adjacent minus row
 
-![image of the board](https://raw.githubusercontent.com/james2doyle/raspberry-pi-course/master/board2.jpg)
-![image of the board](https://raw.githubusercontent.com/james2doyle/raspberry-pi-course/master/board3.jpg)
+![closeup image of the board](https://raw.githubusercontent.com/james2doyle/raspberry-pi-course/master/board2.jpg)
+![closeup image of the board](https://raw.githubusercontent.com/james2doyle/raspberry-pi-course/master/board3.jpg)
 
 #### Getting this project
 
