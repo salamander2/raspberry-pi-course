@@ -2,7 +2,6 @@
 var config = require('./config');
 // get the initial module we are going to use
 var gpio = require('pi-gpio');
-var Promise = require("native-promise-only");
 var Twit = require('twit');
 var Emitter = require('events').EventEmitter;
 var emitter = new Emitter();
