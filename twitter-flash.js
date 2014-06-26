@@ -19,7 +19,9 @@ var stream = T.stream('statuses/filter', {
   '#raspberrypi',
   '@raspberry_pi',
   '#ldnont',
-  '#toronto'
+  '#toronto',
+  '#unlondon',
+  '@unlondon'
   ],
   language: 'en'
 });
