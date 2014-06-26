@@ -80,4 +80,4 @@ setTimeout(function() {
     // close this program
     process.exit(0);
   });
-}, 20000);
+}, 60000);
