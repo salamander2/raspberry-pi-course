@@ -25,7 +25,7 @@ build/Release
 node_modules
 
 # leave out my config.json
-# config.json
+config.json
 
 # dont show my sublime project files
 *.sublime-workspace

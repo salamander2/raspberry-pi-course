@@ -17,11 +17,24 @@ My first raspberry pi course for UnLondon. See the course breakdown [here](http:
 
 * download [NOOBs offline](http://www.raspberrypi.org/downloads/) and unzip it onto the SD Card you want to use
 * Choose the Rasbian option by hitting the `spacebar` and then press `i` to start the installation
-* make sure your keyboard is US and not GB
+* make sure your keyboard is **US and not GB**
 * the default username and password is  "pi" and "raspberry", respectively
 * once installed the system will reboot
 * login with the default credentials
 * you are now logged into the shell. Use `startx` to launch the desktop
+
+#### Keyboard Problems
+
+If you press the `~` key and see that it is not `~` that means your keyboard is not setup properly.
+
+* run `sudo raspi-config` from the command line
+* highlight `4 Internationalisation Options` and press enter
+* you should see an option for keyboard layout, select that
+* you should change to a `Generic Key` keyboard when in doubt
+* the next pages will let you set a locale for the keyboard, we want US not UK
+* Choose other in the language choice
+* Choose US for the next choice
+* you can leave everything else default and just press enter throughout
 
 #### Setup WiFi
 
