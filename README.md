@@ -58,6 +58,11 @@ iface wlan0 inet dhcp
 * save the file with `ctrl+o`, confirm the filename with `y`, and press `ctrl+x` to close nano.
 * restart the pi with `sudo shutdown -r now`
 
+#### DNS problems
+If `ping 8.8.8.8` works, but DNS doesn't work (ie. `ping www.google.com` ) , then edit /etc/resolv.conf and put in the line
+`nameserver 8.8.8.8` or whatever nameserver you want to use. I'm not sure which program automatically modifies this.
+
+
 #### Update
 
 * you can update the repositories with `sudo apt-get update`, accept with `y`
