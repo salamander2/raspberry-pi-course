@@ -1,3 +1,6 @@
+# This is a fork of James Doyle's Raspberry Pi Course for UnLondon from 2014 (or earlier)
+## It is no longer used. I've made updates to this in separate repository.
+
 raspberry-pi-course
 ===================
 
